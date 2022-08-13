@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
     "build": "cd frontend && npm run build",
-    "install-app": "cd frontend && npm install",
+    "install-frontend": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-frontend && npm run build"
   },
   "author": "Ghazi",
