@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "frontend:build": "cd frontend && npm run build",
+    "build": "cd frontend && npm run frontend:build",
     "install-frontend": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-frontend && npm run frontend:build",
     "app": "nodemon app.js",
