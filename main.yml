@@ -15,3 +15,4 @@ jobs:
           heroku_api_key: ${{071168c6-9046-4e9e-8ff1-b92e5cae621d}}
           heroku_app_name: "fullwebapp" #Must be unique in Heroku
           heroku_email: "gq3893@autuni.ac.nz"
+          procfile: "web: npm start"
