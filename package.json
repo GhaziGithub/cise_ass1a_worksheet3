@@ -8,12 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd frontend && pwd && npm run build",
+    "frontend:build": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
-    "heroku-postbuild": "npm run install-frontend && npm run build",
+    "heroku-postbuild": "npm run install-frontend && npm run frontend:build",
     "app": "nodemon app.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
+    "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix client\"",
+    "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix client\""
 
 
   },
