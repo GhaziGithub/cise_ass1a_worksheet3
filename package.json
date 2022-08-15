@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:frontend": "cd frontend && npm run build",
+    "buildFrontend": "cd frontend && npm run build",
     "install-app": "cd frontend && npm install",
-    "heroku-postbuild": "npm run install-app && npm run build:frontend",
+    "heroku-postbuild": "npm run install-app && npm run build",
     "app": "nodemon app.js",
     "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix client\"",
     "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix client\""
