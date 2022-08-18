@@ -121,8 +121,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildFrontend": "cd frontend/my-app && npm run build",
-    "install-frontend": "cd frontend/my-app && npm install",
+    "install-frontend": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-frontend && npm run build",
     "app": "nodemon backend/app.js",
     "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix client\"",
