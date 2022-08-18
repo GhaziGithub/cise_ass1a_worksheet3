@@ -9,6 +9,7 @@
     "anymatch": "^3.1.2",
     "array-flatten": "^1.1.1",
     "babel-jest": "23.6.0",
+    "babel-loader": "^8.0.5",
     "balanced-match": "^1.0.2",
     "base64-js": "^1.5.1",
     "bcryptjs": "^2.4.3",
